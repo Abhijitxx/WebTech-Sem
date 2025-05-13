@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>India Map with City Hotspots</title>
+</head>
+<body>
+    <h1>India Map with City Hotspots</h1>
+    <p>Click on the cities to see information about them.</p>
+    
+    <img src="./India map.png" alt="India Map" usemap="#india-map" width="500">
+    
+    <map name="india-map">
+        <!-- Chennai (in Tamil Nadu, Southeast) -->
+        <area shape="circle" coords="150,790,75" href="#" alt="Chennai" onclick="document.getElementById('info').innerHTML='<h2>Chennai</h2><p>Chennai is the capital of Tamil Nadu. It is known for its cultural heritage, Marina Beach, and being a major economic center in South India.</p>'; return false;">
+        
+        <!-- Kolkata (in West Bengal, East) -->
+        <area shape="circle" coords="620,510,75" href="#" alt="Kolkata" onclick="document.getElementById('info').innerHTML='<h2>Kolkata</h2><p>Kolkata is the capital of West Bengal. It is known for its colonial architecture, cultural festivals, and the iconic Howrah Bridge.</p>'; return false;">
+        
+        <!-- Delhi (in North) -->
+        <area shape="circle" coords="250,180,75" href="#" alt="Delhi" onclick="document.getElementById('info').innerHTML='<h2>Delhi</h2><p>Delhi is the capital of India. It is known for its historical monuments like Red Fort, Qutub Minar, and being the political center of the country.</p>'; return false;">
+        
+        <!-- Mumbai (in Maharashtra, West) -->
+        <area shape="circle" coords="200,150,75" href="#" alt="Mumbai" onclick="document.getElementById('info').innerHTML='<h2>Mumbai</h2><p>Mumbai is the capital of Maharashtra. It is known as the financial capital of India, home to Bollywood, and famous for its Marine Drive and Gateway of India.</p>'; return false;">
+    </map>
+    
+    <div id="info">
+        <h2>Click on a city to see information</h2>
+    </div>
+</body>
+</html>

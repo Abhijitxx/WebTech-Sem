@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admission Details</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .total-row {
+            font-weight: bold;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Admission</caption>
+        <tr>
+            <th>Course</th>
+            <th>OC</th>
+            <th>BC</th>
+            <th>MBC</th>
+            <th>SC/ST</th>
+            <th>TOTAL</th>
+        </tr>
+        <tr>
+            <td>Computer science</td>
+            <td>9</td>
+            <td>18</td>
+            <td>5</td>
+            <td>5</td>
+            <td>37</td>
+        </tr>
+        <tr>
+            <td>Commerce</td>
+            <td>14</td>
+            <td>25</td>
+            <td>6</td>
+            <td>5</td>
+            <td>50</td>
+        </tr>
+        <tr class="total-row">
+            <td>Grand total</td>
+            <td colspan="4"></td>
+            <td>87</td>
+        </tr>
+    </table>
+</body>
+</html>

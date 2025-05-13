@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Article Upload Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="file"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .button-group {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .reset-btn {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Article Upload Form</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="filepath">Select Article File:</label>
+                <input type="file" id="filepath" name="filepath" required>
+            </div>
+
+            <div class="form-group">
+                <label for="author">Author Name:</label>
+                <input type="text" id="author" name="author" required>
+            </div>
+
+            <div class="form-group">
+                <label>Article Type:</label>
+                <div style="display: flex; gap: 20px; align-items: center;">
+                    <div>
+                        <input type="radio" id="technical" name="type" value="technical">
+                        <label for="technical">Technical</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="literary" name="type" value="literary">
+                        <label for="literary">Literary</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="general" name="type" value="general">
+                        <label for="general">General</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject Topic:</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Select a topic</option>
+                    <option value="technology">Technology</option>
+                    <option value="science">Science</option>
+                    <option value="arts">Arts</option>
+                    <option value="literature">Literature</option>
+                    <option value="history">History</option>
+                    <option value="philosophy">Philosophy</option>
+                    <option value="economics">Economics</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="submit-btn">Submit Article</button>
+                <button type="reset" class="reset-btn">Reset Form</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

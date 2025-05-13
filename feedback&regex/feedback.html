@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campus Visit Feedback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #003366;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .checkbox-group,
+        .radio-group {
+            margin: 10px 0;
+        }
+        .checkbox-group label,
+        .radio-group label {
+            display: inline-block;
+            margin-right: 15px;
+            font-weight: normal;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .reset-btn {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Campus Visit Feedback Form</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>What did you like most about the campus?</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="students" name="liked" value="students">
+                    <label for="students">Students</label>
+
+                    <input type="checkbox" id="location" name="liked" value="location">
+                    <label for="location">Location</label>
+
+                    <input type="checkbox" id="campus" name="liked" value="campus">
+                    <label for="campus">Campus</label>
+
+                    <input type="checkbox" id="atmosphere" name="liked" value="atmosphere">
+                    <label for="atmosphere">Atmosphere</label>
+
+                    <input type="checkbox" id="sports" name="liked" value="sports">
+                    <label for="sports">Sports</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>How did you become interested in our university?</label>
+                <div class="radio-group">
+                    <input type="radio" id="friends" name="interest" value="friends">
+                    <label for="friends">Friends</label>
+
+                    <input type="radio" id="television" name="interest" value="television">
+                    <label for="television">Television</label>
+
+                    <input type="radio" id="internet" name="interest" value="internet">
+                    <label for="internet">Internet</label>
+
+                    <input type="radio" id="other" name="interest" value="other">
+                    <label for="other">Other</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="5"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Submit Feedback</button>
+                <button type="reset" class="reset-btn">Reset Form</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

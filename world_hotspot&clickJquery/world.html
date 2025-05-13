@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>World Map with Country Hotspots</title>
+</head>
+<body>
+    <h1>World Map with Country Hotspots</h1>
+    <p>Click on the countries to see information about them.</p>
+    
+    <img src="./world_map.png" alt="World Map" usemap="#world-map" width="800">
+    
+    <map name="world-map">
+        <!-- India -->
+        <area shape="circle" coords="550,250,30" href="#" alt="India" 
+            onclick="document.getElementById('info').innerHTML='<h2>India</h2><p>India is the world\'s largest democracy. Known for its rich cultural heritage, diverse traditions, and historical monuments like the Taj Mahal. Capital: New Delhi. Famous for its IT industry, Bollywood, and cuisine.</p>'; return false;">
+        
+        <!-- USA -->
+        <area shape="circle" coords="200,200,30" href="#" alt="USA" 
+            onclick="document.getElementById('info').innerHTML='<h2>United States of America</h2><p>The USA is one of the world\'s largest economies. Known for its technological innovation, entertainment industry (Hollywood), and diverse landscapes. Capital: Washington D.C. Home to Silicon Valley and many global companies.</p>'; return false;">
+        
+        <!-- England -->
+        <area shape="circle" coords="400,150,30" href="#" alt="England" 
+            onclick="document.getElementById('info').innerHTML='<h2>England</h2><p>England is part of the United Kingdom. Known for its rich history, royal family, and cultural influence. Capital: London. Famous for its historical landmarks like Big Ben, Tower Bridge, and Buckingham Palace.</p>'; return false;">
+        
+        <!-- Australia -->
+        <area shape="circle" coords="650,400,30" href="#" alt="Australia" 
+            onclick="document.getElementById('info').innerHTML='<h2>Australia</h2><p>Australia is both a country and a continent. Known for its unique wildlife, Great Barrier Reef, and vibrant cities. Capital: Canberra. Famous for its beaches, outback, and sporting culture.</p>'; return false;">
+    </map>
+    
+    <div id="info">
+        <h2>Click on a country to see information</h2>
+    </div>
+</body>
+</html>

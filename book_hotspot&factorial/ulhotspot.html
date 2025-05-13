@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book List with Hotspots</title>
+    <style>
+        .book-list {
+            list-style: none;
+            padding: 0;
+        }
+        .book-item {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+        }
+        .hotspot {
+            width: 30px;
+            height: 30px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+        .book-info {
+            display: none;
+            margin: 10px 0 10px 45px;
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Popular Books Collection</h1>
+    <ul class="book-list">
+        <li class="book-item">
+            <img src="https://via.placeholder.com/30" class="hotspot" onclick="toggleInfo('book1')" alt="book icon">
+            <span>Harry Potter and the Philosopher's Stone</span>
+            <div id="book1" class="book-info">
+                <h3>Harry Potter and the Philosopher's Stone</h3>
+                <p>Author: J.K. Rowling</p>
+                <p>Published: 1997</p>
+                <p>Genre: Fantasy Fiction</p>
+                <p>Description: The first novel in the Harry Potter series follows a young wizard discovering his magical heritage.</p>
+            </div>
+        </li>
+
+        <li class="book-item">
+            <img src="https://via.placeholder.com/30" class="hotspot" onclick="toggleInfo('book2')" alt="book icon">
+            <span>The Lord of the Rings</span>
+            <div id="book2" class="book-info">
+                <h3>The Lord of the Rings</h3>
+                <p>Author: J.R.R. Tolkien</p>
+                <p>Published: 1954</p>
+                <p>Genre: High Fantasy</p>
+                <p>Description: An epic high-fantasy novel that follows the quest to destroy a powerful ring and defeat the Dark Lord Sauron.</p>
+            </div>
+        </li>
+
+        <li class="book-item">
+            <img src="https://via.placeholder.com/30" class="hotspot" onclick="toggleInfo('book3')" alt="book icon">
+            <span>To Kill a Mockingbird</span>
+            <div id="book3" class="book-info">
+                <h3>To Kill a Mockingbird</h3>
+                <p>Author: Harper Lee</p>
+                <p>Published: 1960</p>
+                <p>Genre: Southern Gothic</p>
+                <p>Description: A powerful story about racial injustice and the loss of innocence in the American South.</p>
+            </div>
+        </li>
+
+        <li class="book-item">
+            <img src="https://via.placeholder.com/30" class="hotspot" onclick="toggleInfo('book4')" alt="book icon">
+            <span>1984</span>
+            <div id="book4" class="book-info">
+                <h3>1984</h3>
+                <p>Author: George Orwell</p>
+                <p>Published: 1949</p>
+                <p>Genre: Dystopian Fiction</p>
+                <p>Description: A dystopian social science fiction novel that explores surveillance, totalitarianism, and repressive regimentation.</p>
+            </div>
+        </li>
+    </ul>
+
+    <script>
+        function toggleInfo(bookId) {
+            const info = document.getElementById(bookId);
+            const allInfos = document.getElementsByClassName('book-info');
+            
+            // Hide all other book info sections
+            for(let item of allInfos) {
+                if(item.id !== bookId) {
+                    item.style.display = 'none';
+                }
+            }
+            
+            // Toggle current book info
+            if(info.style.display === 'block') {
+                info.style.display = 'none';
+            } else {
+                info.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

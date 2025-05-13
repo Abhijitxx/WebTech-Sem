@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Types of CSS Demo</title>
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="external.css">
+    
+    <!-- Internal CSS -->
+    <style>
+        .internal-style {
+            background-color: #ffeb3b;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Demonstration of Different CSS Types</h1>
+
+    <!-- Inline CSS -->
+    <div style="background-color: #ff9999; padding: 20px; margin: 20px; border-radius: 8px; text-align: center;">
+        <h2>Inline CSS Example</h2>
+        <p>This div uses inline CSS styling directly in the HTML element.</p>
+    </div>
+
+    <!-- Internal CSS -->
+    <div class="internal-style">
+        <h2>Internal CSS Example</h2>
+        <p>This div uses internal CSS defined in the style tag.</p>
+    </div>
+
+    <!-- External CSS -->
+    <div class="external-style">
+        <h2>External CSS Example</h2>
+        <p>This div uses external CSS from a separate file.</p>
+    </div>
+</body>
+</html>

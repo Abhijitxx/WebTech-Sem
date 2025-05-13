@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Hotspot</title>
+    <style>
+        .book-info {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        li {
+            list-style-type: none;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Book Collection</h1>
+    <ul>
+        <li>
+            <img src="book1.jpg" alt="Book 1" onclick="showInfo('info1')">
+            <div id="info1" class="book-info">
+                <h3>To Kill a Mockingbird</h3>
+                <p>Author: Harper Lee</p>
+                <p>Published: 1960</p>
+                <p>Genre: Southern Gothic, Bildungsroman</p>
+            </div>
+        </li>
+        <li>
+            <img src="book2.jpg" alt="Book 2" onclick="showInfo('info2')">
+            <div id="info2" class="book-info">
+                <h3>1984</h3>
+                <p>Author: George Orwell</p>
+                <p>Published: 1949</p>
+                <p>Genre: Dystopian, Political Fiction</p>
+            </div>
+        </li>
+        <li>
+            <img src="book3.jpg" alt="Book 3" onclick="showInfo('info3')">
+            <div id="info3" class="book-info">
+                <h3>The Great Gatsby</h3>
+                <p>Author: F. Scott Fitzgerald</p>
+                <p>Published: 1925</p>
+                <p>Genre: Tragedy, Jazz Age</p>
+            </div>
+        </li>
+        <li>
+            <img src="book4.jpg" alt="Book 4" onclick="showInfo('info4')">
+            <div id="info4" class="book-info">
+                <h3>Pride and Prejudice</h3>
+                <p>Author: Jane Austen</p>
+                <p>Published: 1813</p>
+                <p>Genre: Romance, Satire</p>
+            </div>
+        </li>
+    </ul>
+
+    <script>
+        function showInfo(id) {
+            // Hide all book info first
+            var infos = document.getElementsByClassName('book-info');
+            for (var i = 0; i < infos.length; i++) {
+                infos[i].style.display = 'none';
+            }
+            // Show the selected book info
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

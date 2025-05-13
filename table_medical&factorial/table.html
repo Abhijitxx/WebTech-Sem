@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical Information</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+        
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .title {
+            color: red;
+            font-style: italic;
+            font-size: 20px;
+        }
+        
+        .image-cell {
+            font-weight: bold;
+        }
+        
+        .males {
+            color: lime;
+        }
+        
+        .females {
+            color: #00ff00;
+        }
+        
+        .height {
+            color: orange;
+        }
+        
+        .weight {
+            color: #ffa500;
+        }
+        
+        .eyes {
+            color: blue;
+        }
+        
+        .value {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="4" class="title">Medical Information</td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="image-cell">IMAGE</td>
+            <td class="height">Average<br>height</td>
+            <td class="weight">weight</td>
+            <td class="eyes">Red<br>eyes</td>
+        </tr>
+        <tr>
+            <td class="value">1.9</td>
+            <td class="value">0.003</td>
+            <td class="value">40%</td>
+        </tr>
+        <tr>
+            <td class="males">Males</td>
+            <td class="value">1.7</td>
+            <td class="value">0.002</td>
+            <td class="value">43%</td>
+        </tr>
+        <tr>
+            <td class="females">Females</td>
+            <td class="value">1.7</td>
+            <td class="value">0.002</td>
+            <td class="value">43%</td>
+        </tr>
+    </table>
+</body>
+</html>

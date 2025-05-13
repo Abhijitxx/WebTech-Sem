@@ -1,0 +1,24 @@
+/* Element Selector */
+h1 {
+    color: blue;
+}
+
+h3 {
+    color: blue;
+}
+
+/* Class Selector */
+.dark {
+    font-weight: bold;
+}
+
+/* Link Styles */
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: yellow;
+    color: blue;
+}
